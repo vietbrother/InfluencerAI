@@ -12,7 +12,7 @@
             {{--</li>--}}
             <li class="user-pro">
                 <a href="#" class="waves-effect"><img src="theme/plugins/images/users/varun.jpg" alt="user-img"
-                                                      class="img-circle"> <span class="hide-menu"> Steve Gection<span
+                                                      class="img-circle"> <span class="hide-menu"> Viet Brother<span
                                 class="fa arrow"></span></span>
                 </a>
                 <ul class="nav nav-second-level">
@@ -25,7 +25,7 @@
             </li>
             <li><a href="/home" class="waves-effect"><i class=" ti-home text-info"></i> <span
                             class="hide-menu">Dashboard</span></a></li>
-            <li><a href="/profile" class="waves-effect"><i class="fa fa-circle-o text-danger"></i> <span
+            <li><a href="/profile" class="waves-effect"><i class="ti-user text-danger"></i> <span
                             class="hide-menu">Account</span></a></li>
             <li><a href="faq.html" class="waves-effect"><i class="fa fa-circle-o text-success"></i> <span
                             class="hide-menu">Faqs</span></a></li>
