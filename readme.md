@@ -1,14 +1,14 @@
 ## Install
 
-Step:1 Create a new project
-composer create-project laravel/laravel socialLogin --prefer-dist
-php artisan migrate
+1. Step:1 Create a new project
+	- composer create-project laravel/laravel socialLogin --prefer-dist
+	- php artisan migrate
 
-Step 2: Create Laravel Authentication
-php artisan make:auth
+2. Step 2: Create Laravel Authentication
+	- php artisan make:auth
 
-Step: 3 Download Laravel/Socialite package
-composer require laravel/socialite
+3. Step: 3 Download Laravel/Socialite package
+	- composer require laravel/socialite
 
 get token facebook : https://developers.facebook.com/ 
 
