@@ -4,7 +4,14 @@
 <meta name="description" content="">
 <meta name="author" content="">
 <link rel="icon" type="image/png" sizes="16x16" href="theme/plugins/images/favicon.png">
-<title>Influencer AI</title>
+
+<!-- CSRF Token -->
+<meta name="csrf-token" content="{{ csrf_token() }}">
+
+<title>{{ config('app.name', 'Influencer AI') }}</title>
+
+<!-- Scripts -->
+<script src="{{ asset('js/app.js') }}" defer></script>
 
 <!-- Bootstrap Core CSS -->
 <link href="theme/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -25,7 +32,7 @@
 <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 <!--[if lt IE 9]>
 <!--<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>-->
-{{--<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>--}}
+<!--<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>-->
 <script src="theme/js/html5shiv.js"></script>
 <script src="theme/js/respond.min.js"></script>
 <![endif]-->

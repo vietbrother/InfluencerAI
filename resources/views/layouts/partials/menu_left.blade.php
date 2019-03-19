@@ -27,7 +27,7 @@
                             class="hide-menu">Dashboard</span></a></li>
             <li><a href="/profile" class="waves-effect"><i class="ti-user text-danger"></i> <span
                             class="hide-menu">Account</span></a></li>
-            <li><a href="faq.html" class="waves-effect"><i class="fa fa-circle-o text-success"></i> <span
+            <li><a href="/faq" class="waves-effect"><i class="ti-help text-success"></i> <span
                             class="hide-menu">Faqs</span></a></li>
             {{--<li class="nav-small-cap m-t-10">--- Main Menu</li>--}}
             {{--<li><a href="index.html" class="waves-effect"><i class="linea-icon linea-basic fa-fw" data-icon="v"></i>--}}

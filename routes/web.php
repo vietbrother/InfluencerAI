@@ -25,3 +25,6 @@ Route::get('/callback/{social}', 'SocialAuthController@callback');
 #module user
 Route::get('/profile', 'User\ProfileController@index')->name('profile');
 //Route::resource('profile', 'User\ProfileController');
+
+#FAQ
+Route::get('/faq', 'Config\FAQController@index')->name('faq');
