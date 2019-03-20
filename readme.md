@@ -20,3 +20,9 @@ https://viblo.asia/p/laravel-social-login-63vKjpNdl2R
 ## License
 
 The Laravel framework is open-source software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+
+
+### Run https
+- php artisan serve
+- cd <path-to-ngrok>
+- ./ngrok http localhost:8000
