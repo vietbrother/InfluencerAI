@@ -18,6 +18,11 @@ class CreateSocialUsersTable extends Migration
             $table->integer('user_id');
             $table->string('provider_user_id');
             $table->string('provider');
+            $table->string('name');
+            $table->string('email');
+            $table->string('avatar')->nullable();
+            $table->string('provider_id')->nullable();
+            $table->string('access_token')->nullable();
             $table->timestamps();
         });
     }

@@ -26,7 +26,12 @@ class SocialAccountService
             $email = $providerUser->getEmail() ?? $providerUser->getNickname();
             $account = new SocialUsers([
                 'provider_user_id' => $providerUser->getId(),
-                'provider' => $social
+                'provider' => $social,
+                'name' => $providerUser->getName(),
+                'email' => $providerUser->getEmail(),
+                'avatar' => $providerUser->getAvatar(),
+                'provider_id' => $providerUser->getId(),
+                'access_token' => $providerUser->token
             ]);
             $user = User::whereEmail($email)->first();
 
@@ -34,7 +39,7 @@ class SocialAccountService
 
                 $user = User::create([
                     'email' => $email,
-                    'name' => $providerUser->getName(),
+                    'name' => $providerUser->getEmail(),
                     'password' => $providerUser->getName(),
                 ]);
             }
