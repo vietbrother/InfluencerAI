@@ -3,7 +3,7 @@
     <div class="navbar-header"><a class="navbar-toggle hidden-sm hidden-md hidden-lg " href="javascript:void(0)"
                                   data-toggle="collapse" data-target=".navbar-collapse"><i class="ti-menu"></i></a>
         <div class="top-left-part">
-            <a class="logo" href="index.html"><b><img src="theme/plugins/images/eliteadmin-logo.png" alt="home"/></b>
+            <a class="logo" href="/home"><b><img class="logo-main" src="theme/plugins/images/logo_login.png" alt="home"/></b>
                 <span class="hidden-xs"><img style="width: 140px;" src="theme/plugins/images/logo-text.png" alt="home"/></span></a>
         </div>
         <ul class="nav navbar-top-links navbar-left hidden-xs">

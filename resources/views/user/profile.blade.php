@@ -6,15 +6,35 @@
             <div class="row bg-title">
                 <div class="col-lg-3 col-md-4 col-sm-4 col-xs-12">
                     <h4 class="page-title">Profile page</h4> </div>
-                <div class="col-lg-9 col-sm-8 col-md-8 col-xs-12"> <a href="https://themeforest.net/item/elite-admin-the-ultimate-dashboard-web-app-kit-material-design/16750820?ref=suniljoshi" target="_blank" class="btn btn-danger pull-right m-l-20 btn-rounded btn-outline hidden-xs hidden-sm waves-effect waves-light">Buy Now</a>
+                <div class="col-lg-9 col-sm-8 col-md-8 col-xs-12">
                     <ol class="breadcrumb">
-                        <li><a href="#">Dashboard</a></li>
-                        <li><a href="#">Sample Pages</a></li>
-                        <li class="active">Profile page</li>
+                        <li class="active"><a href="/home">Dashboard</a></li>
+                        {{--<li><a href="#">Sample Pages</a></li>--}}
+                        {{--<li class="active">Profile page</li>--}}
                     </ol>
                 </div>
             </div>
             <!-- /.row -->
+
+            <div class="row">
+                <div class="col-md-12">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="card card-inverse">
+                                    <img class="card-img" src="theme/plugins/images/cards/7.jpg" alt="Card image">
+                                    <div class="card-img-overlay">
+                                        <a href="javascript:void(0)"><img src="../../../theme/plugins/images/users/varun.jpg" class="thumb-extra-lg img-circle" alt="img"></a>
+                                        <a href="/profile/edit" target="_blank" class="btn btn-danger m-l-20 btn-rounded btn-outline hidden-xs hidden-sm waves-effect waves-light">Edit Profile</a>
+                                        <h4 class="card-title">Card title</h4>
+                                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer. This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer. </p>
+                                        <p class="card-text"><small class="text-white">Last updated 3 mins ago</small></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+            </div>
+
             <!-- .row -->
             <div class="row">
                 <div class="col-md-4 col-xs-12">

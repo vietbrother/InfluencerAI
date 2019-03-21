@@ -219,13 +219,13 @@
 
 
     <div id="wrapper" class="login">
-        <div class="login-box-cus">
-            <div class="white-box" style="border-radius: 10px">
+        <div class="login-box-cus no-bg">
+            <div class="white-box no-bg" style="border-radius: 10px">
                 {{--<form class="form-horizontal form-material" id="loginform" action="index.html">--}}
                 <form class="form-horizontal form-material" method="POST" action="{{ route('login') }}">
                     @csrf
                     <div class="form-group text-center">
-                        <img src="theme/plugins/images/logo_login.png" class="thumb-lg img-fluid"
+                        <img src="theme/plugins/images/logo_login.png" class="thumb-lg img-fluid logo-login"
                              alt="img">
                     </div>
                     {{--<div class="form-group text-center">--}}
@@ -253,16 +253,16 @@
 
                     <div class="row">
                         <div class="col-md-10 offset-md-1">
-                            <h5 class="label-center bold">OR</h5>
+                            <h5 class="label-center bold text-white">OR</h5>
                         </div>
                     </div>
 
                     <div class="form-group">
                         <div class="col-md-10 offset-md-1">
                             <div class="input-group">
-                                <div class="input-group-addon" style="background-color: transparent; border-top: none ; border-left: none ;"><i class="ti-user"></i></div>
+                                <div class="input-group-addon input-icon-login" ><i class="ti-user"></i></div>
                                 <input id="email" type="email" placeholder="Username or email"
-                                       class="pd-left-10 form-control{{ $errors->has('email') ? ' is-invalid' : '' }}"
+                                       class="pd-left-10 input-login form-control{{ $errors->has('email') ? ' is-invalid' : '' }}"
                                        name="email" value="{{ old('email') }}" required autofocus>
                                 @if ($errors->has('email'))
                                     <span class="invalid-feedback" role="alert">
@@ -275,9 +275,9 @@
                     <div class="form-group">
                         <div class="col-md-10 offset-md-1">
                             <div class="input-group">
-                                <div class="input-group-addon" style="background-color: transparent; border-top: none ; border-left: none ;"><i class="ti-lock"></i></div>
+                                <div class="input-group-addon input-icon-login" ><i class="ti-lock"></i></div>
                                 <input id="password" type="password" placeholder="Password"
-                                       class="pd-left-10 form-control{{ $errors->has('password') ? ' is-invalid' : '' }}"
+                                       class="pd-left-10 input-login form-control{{ $errors->has('password') ? ' is-invalid' : '' }}"
                                        name="password" required>
 
                                 @if ($errors->has('password'))
@@ -295,12 +295,12 @@
                                        id="remember" {{ old('remember') ? 'checked' : '' }}>
 
                             </div>
-                            <label class="form-check-label btn pull-left" for="remember">
+                            <label class="form-check-label btn pull-left text-white" for="remember">
                                 {{ __('Remember Me') }}
                             </label>
 
                             @if (Route::has('password.request'))
-                                <a class="btn btn-link pull-right" href="{{ route('password.request') }}"><i
+                                <a class="btn btn-link pull-right text-white" href="{{ route('password.request') }}"><i
                                             class="fa fa-lock m-r-5"></i>
                                     {{ __('Forgot Pwd?') }}
                                 </a>

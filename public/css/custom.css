@@ -172,6 +172,7 @@ html i, html em, html b, html strong, html span {
     width: 60%;
     line-height: 30px;
     height: 45px;
+    border-radius: 10px;
 }
 
 .btn-animation-facebook {
@@ -284,9 +285,9 @@ html i, html em, html b, html strong, html span {
     position: fixed;
 }
 .login-box-cus{
-    background: #fff;
+    /*background: #fff;*/
     width: 400px;
-    margin: 4% auto 0;
+    margin: 2% auto 4%;
 }
 
 .label-between{
@@ -310,10 +311,36 @@ html i, html em, html b, html strong, html span {
 }
 .pd-left-10{
     padding-left: 10px !important;
+    border-radius: 10px;
 }
 
-.icon-login {
-    background-color: transparent;
-    border-top: none ;
-    border-left: none ;
+.input-login{
+    padding-left: 10px !important;
+    border-radius: 10px !important;
+    background-color: white !important;
+}
+.input-icon-login {
+    background-color: transparent !important;
+    border-top: none !important;
+    border-left: none !important;
+    color: white !important;
+}
+.no-bg{
+    background: transparent !important;
+}
+
+.logo-login{
+    border: 3px solid #fff;
+    border-radius: 4px;
+}
+
+.logo-main{
+    border: 2px solid #fff;
+    border-radius: 4px;
+    width: 60%;
+}
+
+.thumb-extra-lg{
+    height: 180px;
+    width: 180px;
 }
