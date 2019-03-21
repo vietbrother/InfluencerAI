@@ -9,6 +9,7 @@
 namespace App\Services;
 
 use Laravel\Socialite\Contracts\User as ProviderUser;
+use Illuminate\Support\Facades\Hash;
 use App\SocialUsers;
 use App\User;
 
@@ -23,16 +24,41 @@ class SocialAccountService
         if ($account) {
             return $account->user;
         } else {
+            print_r('$providerUser');
             $email = $providerUser->getEmail() ?? $providerUser->getNickname();
-            $account = new SocialUsers([
-                'provider_user_id' => $providerUser->getId(),
-                'provider' => $social,
-                'name' => $providerUser->getName(),
-                'email' => $providerUser->getEmail(),
-                'avatar' => $providerUser->getAvatar(),
-                'provider_id' => $providerUser->getId(),
-                'access_token' => $providerUser->token
-            ]);
+            if($social = 'facebook'){
+                $account = new SocialUsers([
+                    'provider_user_id' => $providerUser->getId(),
+                    'provider' => $social,
+                    'name' => $providerUser->getName(),
+                    'email' => $providerUser->getEmail(),
+                    'avatar' => $providerUser->getAvatar(),
+                    'provider_id' => $providerUser->getId(),
+                    'access_token' => $providerUser->token
+                ]);
+            } else if($social = 'google'){
+                $account = new SocialUsers([
+                    'provider_user_id' => $providerUser->getId(),
+                    'provider' => $social,
+                    'name' => $providerUser->name,
+                    'email' => $providerUser->email,
+                    'avatar' => $providerUser->getAvatar(),
+                    'provider_id' => $providerUser->getId(),
+                    'access_token' => $providerUser->token
+                ]);
+
+            } else {
+                $account = new SocialUsers([
+                    'provider_user_id' => $providerUser->getId(),
+                    'provider' => $social,
+                    'name' => $providerUser->getName(),
+                    'email' => $providerUser->getEmail(),
+                    'avatar' => $providerUser->getAvatar(),
+                    'provider_id' => $providerUser->getId(),
+                    'access_token' => $providerUser->token
+                ]);
+            }
+
             $user = User::whereEmail($email)->first();
 
             if (!$user) {
@@ -40,7 +66,7 @@ class SocialAccountService
                 $user = User::create([
                     'email' => $email,
                     'name' => $providerUser->getEmail(),
-                    'password' => $providerUser->getName(),
+                    'password' => Hash::make($providerUser->getEmail()),
                 ]);
             }
 

@@ -11,7 +11,7 @@
 <title>{{ config('app.name', 'Influencer AI') }}</title>
 
 <!-- Scripts -->
-<script src="{{ asset('js/app.js') }}" defer></script>
+{{--<script src="{{ asset('js/app.js') }}" defer></script>--}}
 
 <!-- Bootstrap Core CSS -->
 <link href="theme/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -19,6 +19,12 @@
 
 <!-- Menu CSS -->
 <link href="theme/plugins/bower_components/sidebar-nav/dist/sidebar-nav.min.css" rel="stylesheet">
+
+<!-- toast CSS -->
+<link href="theme/plugins/bower_components/toast-master/css/jquery.toast.css" rel="stylesheet">
+<!-- morris CSS -->
+<link href="theme/plugins/bower_components/morrisjs/morris.css" rel="stylesheet">
+<!-- animation CSS -->
 
 <!-- animation CSS -->
 <link href="theme/css/animate.css" rel="stylesheet">
@@ -33,6 +39,6 @@
 <!--[if lt IE 9]>
 <!--<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>-->
 <!--<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>-->
-<script src="theme/js/html5shiv.js"></script>
-<script src="theme/js/respond.min.js"></script>
+{{--<script src="theme/js/html5shiv.js"></script>--}}
+{{--<script src="theme/js/respond.min.js"></script>--}}
 <![endif]-->

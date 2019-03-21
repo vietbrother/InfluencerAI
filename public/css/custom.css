@@ -164,7 +164,7 @@ html i, html em, html b, html strong, html span {
 
     overflow: hidden;
     max-width: 500px;
-    min-width: 300px;
+    min-width: 290px;
     margin: 1rem auto;
     text-transform: uppercase;
     border: 1px solid currentColor;
@@ -279,11 +279,15 @@ html i, html em, html b, html strong, html span {
 
 
 .login {
-    background: url("../theme/plugins/images/login-register.jpg") center center/cover no-repeat !important;
+    background: url("../theme/plugins/images/login_bg.png") center center/cover no-repeat !important;
     height: 100%;
-    /*position: fixed;*/
+    position: fixed;
 }
-
+.login-box-cus{
+    background: #fff;
+    width: 400px;
+    margin: 4% auto 0;
+}
 
 .label-between{
     color: white;
@@ -294,4 +298,22 @@ html i, html em, html b, html strong, html span {
     background-image: url("../theme/plugins/images/login_bg.png");
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.remember-checkbox{
+    margin-top: 7px;
+    margin-right: -5px;
+}
+
+.mg-left-5{
+    margin-left: 5px;
+}
+.pd-left-10{
+    padding-left: 10px !important;
+}
+
+.icon-login {
+    background-color: transparent;
+    border-top: none ;
+    border-left: none ;
 }

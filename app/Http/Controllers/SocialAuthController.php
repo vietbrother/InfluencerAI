@@ -22,6 +22,9 @@ class SocialAuthController extends Controller
         $user = SocialAccountService::createOrGetUser(Socialite::driver($social)->stateless()->user(), $social);
         auth()->login($user);
 
+        // Store a piece of data in the session...
+        session('user' , $user);
+
         return redirect()->to('/home');
     }
 }
