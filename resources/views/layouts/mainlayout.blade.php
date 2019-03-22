@@ -14,7 +14,7 @@
     <div class="preloader">
         <div class="cssload-speeding-wheel"></div>
     </div>
-    <div id="wrapper">
+    <div>
         <!-- Top Navigation -->
         @include('layouts.partials.menu_top')
         <!-- End Top Navigation -->

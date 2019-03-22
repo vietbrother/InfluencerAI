@@ -90,7 +90,8 @@ body {
   border-left: 3px solid #0c4c68;
   color: #2b2b2b;
   font-weight: 500;
-  background-color: #edf1f5;
+  /*background-color: #edf1f5;*/
+  background-color: #f0f6ff;
 }
 #side-menu > li > a.active i {
   color: #0c4c68;

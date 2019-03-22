@@ -1,39 +1,7 @@
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <!-- CSRF Token -->
-    <meta name="csrf-token" content="{{ csrf_token() }}">
-
-    <title>{{ config('app.name', 'Laravel') }}</title>
-    <link rel="icon" type="image/png" sizes="16x16" href="theme/plugins/images/favicon.png">
-    <!-- Scripts -->
-    {{--<script src="{{ asset('js/app.js') }}" defer></script>--}}
-
-    <!-- Fonts -->
-    <link rel="dns-prefetch" href="//fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet" type="text/css">
-
-    <!-- Styles -->
-    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
-
-    {{---------------------------Apply Theme-------------------------------------------------------------------------}}
-    <link href="{{ asset('css/custom.css') }}" rel="stylesheet">
-
-    <!-- Bootstrap Core CSS -->
-    <link href="theme/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="theme/plugins/bower_components/bootstrap-extension/css/bootstrap-extension.css" rel="stylesheet">
-    <!-- Menu CSS -->
-    <link href="theme/plugins/bower_components/sidebar-nav/dist/sidebar-nav.min.css" rel="stylesheet">
-    <!-- animation CSS -->
-    <link href="theme/css/animate.css" rel="stylesheet">
-    <!-- Custom CSS -->
-    <link href="theme/css/style.css" rel="stylesheet">
-    <!-- color CSS -->
-    <link href="theme/css/colors/blue-custom.css" id="theme" rel="stylesheet">
-
+    @include('layouts.partials.app_head')
 </head>
 <body>
 {{--<div id="app" class="login-background">--}}
@@ -97,25 +65,10 @@
         {{--@yield('content')--}}
     {{--</main>--}}
 {{--</div>--}}
-
+<div style="width: 100%">
 @yield('content')
+</div>
 
-{{---------------------------Apply Theme-------------------------------------------------------------------------}}
-<!-- jQuery -->
-<script src="theme/plugins/bower_components/jquery/dist/jquery.min.js"></script>
-<!-- Bootstrap Core JavaScript -->
-<script src="theme/bootstrap/dist/js/tether.min.js"></script>
-<script src="theme/bootstrap/dist/js/bootstrap.min.js"></script>
-<script src="theme/plugins/bower_components/bootstrap-extension/js/bootstrap-extension.min.js"></script>
-<!-- Menu Plugin JavaScript -->
-<script src="theme/plugins/bower_components/sidebar-nav/dist/sidebar-nav.min.js"></script>
-<!--slimscroll JavaScript -->
-<script src="theme/js/jquery.slimscroll.js"></script>
-<!--Wave Effects -->
-<script src="theme/js/waves.js"></script>
-<!-- Custom Theme JavaScript -->
-<script src="theme/js/custom.min.js"></script>
-<!--Style Switcher -->
-<script src="theme/plugins/bower_components/styleswitcher/jQuery.style.switcher.js"></script>
+@include('layouts.partials.app_footer')
 </body>
 </html>

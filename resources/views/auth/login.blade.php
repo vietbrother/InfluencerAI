@@ -218,7 +218,7 @@
 
 
 
-    <div id="wrapper" class="login">
+    <div class="login">
         <div class="login-box-cus no-bg">
             <div class="white-box no-bg" style="border-radius: 10px">
                 {{--<form class="form-horizontal form-material" id="loginform" action="index.html">--}}
