@@ -2,30 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="13f09d35-7cb0-4bae-b0e8-707fbeaff0d6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/public/theme/plugins/images/dark.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/theme/plugins/images/nightsky.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/layouts/partials/app_footer.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/layouts/partials/app_head.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Auth/LoginController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/LoginController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Middleware/RedirectIfAuthenticated.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Middleware/RedirectIfAuthenticated.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/css/custom.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/custom.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/theme/css/colors/blue-custom.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/theme/css/colors/blue-custom.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/theme/plugins/bower_components/jsgrid/dist/jsgrid-theme.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/theme/plugins/bower_components/jsgrid/dist/jsgrid-theme.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/theme/plugins/bower_components/jsgrid/dist/jsgrid.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/theme/plugins/bower_components/jsgrid/dist/jsgrid.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/theme/plugins/bower_components/jsgrid/dist/jsgrid.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/theme/plugins/bower_components/jsgrid/dist/jsgrid.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/auth/login.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/login.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/mainlayout.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/mainlayout.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/partials/menu_top.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/partials/menu_top.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/user/profile.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/user/profile.blade.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -86,8 +63,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/public/css/custom.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="348">
-              <caret line="359" column="33" selection-start-line="359" selection-start-column="33" selection-end-line="359" selection-end-column="33" />
+            <state relative-caret-position="365">
+              <caret line="360" column="30" lean-forward="true" selection-start-line="360" selection-start-column="30" selection-end-line="360" selection-end-column="30" />
             </state>
           </provider>
         </entry>
@@ -439,12 +416,12 @@
       <workItem from="1553133454523" duration="15833000" />
       <workItem from="1553180814654" duration="6199000" />
       <workItem from="1553219506532" duration="15565000" />
-      <workItem from="1553246706242" duration="4056000" />
+      <workItem from="1553246706242" duration="4364000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="83409000" />
+    <option name="totallyTimeSpent" value="83717000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -457,7 +434,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2531983" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -856,8 +832,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/css/custom.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="348">
-          <caret line="359" column="33" selection-start-line="359" selection-start-column="33" selection-end-line="359" selection-end-column="33" />
+        <state relative-caret-position="365">
+          <caret line="360" column="30" lean-forward="true" selection-start-line="360" selection-start-column="30" selection-end-line="360" selection-end-column="30" />
         </state>
       </provider>
     </entry>

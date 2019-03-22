@@ -358,8 +358,8 @@ html i, html em, html b, html strong, html span {
 }
 .btn-white:hover {
     background: white !important;
-    color: #034158;
-    opacity: .8;
+    color: #034158 !important;
+    /*opacity: .8;*/
 }
 
 .bg-white{
