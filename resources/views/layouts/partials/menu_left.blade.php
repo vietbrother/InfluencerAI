@@ -10,19 +10,19 @@
             {{--</span></div>--}}
                 {{--<!-- /input-group -->--}}
             {{--</li>--}}
-            <li class="user-pro">
-                <a href="#" class="waves-effect"><img src="theme/plugins/images/users/varun.jpg" alt="user-img"
-                                                      class="img-circle"> <span class="hide-menu"> Viet Brother<span
-                                class="fa arrow"></span></span>
-                </a>
-                <ul class="nav nav-second-level">
-                    <li><a href="javascript:void(0)"><i class="ti-user"></i> My Profile</a></li>
-                    <li><a href="javascript:void(0)"><i class="ti-wallet"></i> My Balance</a></li>
-                    <li><a href="javascript:void(0)"><i class="ti-email"></i> Inbox</a></li>
-                    <li><a href="javascript:void(0)"><i class="ti-settings"></i> Account Setting</a></li>
-                    <li><a href="javascript:void(0)"><i class="fa fa-power-off"></i> Logout</a></li>
-                </ul>
-            </li>
+            {{--<li class="user-pro">--}}
+                {{--<a href="#" class="waves-effect"><img src="/theme/plugins/images/users/varun.jpg" alt="user-img"--}}
+                                                      {{--class="img-circle"> <span class="hide-menu"> Viet Brother<span--}}
+                                {{--class="fa arrow"></span></span>--}}
+                {{--</a>--}}
+                {{--<ul class="nav nav-second-level">--}}
+                    {{--<li><a href="javascript:void(0)"><i class="ti-user"></i> My Profile</a></li>--}}
+                    {{--<li><a href="javascript:void(0)"><i class="ti-wallet"></i> My Balance</a></li>--}}
+                    {{--<li><a href="javascript:void(0)"><i class="ti-email"></i> Inbox</a></li>--}}
+                    {{--<li><a href="javascript:void(0)"><i class="ti-settings"></i> Account Setting</a></li>--}}
+                    {{--<li><a href="javascript:void(0)"><i class="fa fa-power-off"></i> Logout</a></li>--}}
+                {{--</ul>--}}
+            {{--</li>--}}
             <li><a href="/home" class="waves-effect"><i class=" ti-home text-info"></i> <span
                             class="hide-menu">Dashboard</span></a></li>
             <li><a href="/profile" class="waves-effect"><i class="ti-user text-danger"></i> <span

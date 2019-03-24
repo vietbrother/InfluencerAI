@@ -3,8 +3,8 @@
     <div class="navbar-header"><a class="navbar-toggle hidden-sm hidden-md hidden-lg " href="javascript:void(0)"
                                   data-toggle="collapse" data-target=".navbar-collapse"><i class="ti-menu"></i></a>
         <div class="top-left-part">
-            <a class="logo" href="/home"><b><img class="logo-main" src="theme/plugins/images/logo_login.png" alt="home"/></b>
-                <span class="hidden-xs"><img style="width: 140px;" src="theme/plugins/images/logo-text.png" alt="home"/></span></a>
+            <a class="logo" href="/home"><b><img class="logo-main" src="/theme/plugins/images/logo_login.png" alt="home"/></b>
+                <span class="hidden-xs"><img style="width: 140px;" src="/theme/plugins/images/logo-text.png" alt="home"/></span></a>
         </div>
         <ul class="nav navbar-top-links navbar-left hidden-xs">
             <li><a href="javascript:void(0)" class="open-close hidden-xs waves-effect waves-light"><i
@@ -26,7 +26,7 @@
                     <li>
                         <div class="message-center">
                             <a href="#">
-                                <div class="user-img"><img src="theme/plugins/images/users/pawandeep.jpg" alt="user"
+                                <div class="user-img"><img src="/theme/plugins/images/users/pawandeep.jpg" alt="user"
                                                            class="img-circle"> <span
                                             class="profile-status online pull-right"></span></div>
                                 <div class="mail-contnet">
@@ -34,7 +34,7 @@
                                             class="time">9:30 AM</span></div>
                             </a>
                             <a href="#">
-                                <div class="user-img"><img src="theme/plugins/images/users/sonu.jpg" alt="user"
+                                <div class="user-img"><img src="/theme/plugins/images/users/sonu.jpg" alt="user"
                                                            class="img-circle"> <span
                                             class="profile-status busy pull-right"></span></div>
                                 <div class="mail-contnet">
@@ -42,7 +42,7 @@
                                     <span class="time">9:10 AM</span></div>
                             </a>
                             <a href="#">
-                                <div class="user-img"><img src="theme/plugins/images/users/arijit.jpg" alt="user"
+                                <div class="user-img"><img src="/theme/plugins/images/users/arijit.jpg" alt="user"
                                                            class="img-circle"> <span
                                             class="profile-status away pull-right"></span></div>
                                 <div class="mail-contnet">
@@ -50,7 +50,7 @@
                                             class="time">9:08 AM</span></div>
                             </a>
                             <a href="#">
-                                <div class="user-img"><img src="theme/plugins/images/users/pawandeep.jpg" alt="user"
+                                <div class="user-img"><img src="/theme/plugins/images/users/pawandeep.jpg" alt="user"
                                                            class="img-circle"> <span
                                             class="profile-status offline pull-right"></span></div>
                                 <div class="mail-contnet">
@@ -69,7 +69,8 @@
             <!-- /.dropdown -->
             <li class="dropdown">
                 <a class="dropdown-toggle profile-pic" data-toggle="dropdown" href="#">
-                    <img src="theme/plugins/images/users/varun.jpg" alt="user-img" width="36" class="img-circle">
+                    <img src="{{Auth::user()->avatar ?? "../../../theme/plugins/images/users/user_df.jpg"}}"
+                         alt="user-img" width="36" class="img-circle">
                         <b class="hidden-xs">
                             @if(!empty(Auth::user()))
                                 {!! Auth::user()->name !!}

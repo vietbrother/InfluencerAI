@@ -19,11 +19,15 @@ class SocialAuthController extends Controller
 
     public function callback($social)
     {
-        $user = SocialAccountService::createOrGetUser(Socialite::driver($social)->stateless()->user(), $social);
+        if ($social == 'twitter') {
+            $user = SocialAccountService::createOrGetUser(Socialite::driver($social)->user(), $social);
+        } else {
+            $user = SocialAccountService::createOrGetUser(Socialite::driver($social)->stateless()->user(), $social);
+        }
         auth()->login($user);
 
         // Store a piece of data in the session...
-        session('user' , $user);
+        session('user', $user);
 
         return redirect()->to('/home');
     }

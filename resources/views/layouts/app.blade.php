@@ -70,5 +70,6 @@
 </div>
 
 @include('layouts.partials.app_footer')
+@include('layouts.partials.validator')
 </body>
 </html>

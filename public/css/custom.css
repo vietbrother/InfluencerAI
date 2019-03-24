@@ -99,12 +99,7 @@
 }
 
 
-/*html {*/
-/*padding-top: 50px;*/
-/*font-family: 'Open Sans', Helvetica, arial, sans-serif;*/
-/*text-align: center;*/
-/*background-color: #eee;*/
-/*}*/
+/******************** Button social ************************/
 html *, html *:before, html *:after {
     box-sizing: border-box;
     transition: 0.5s ease-in-out;
@@ -118,28 +113,6 @@ html i, html em, html b, html strong, html span {
     z-index: -1;
 }
 
-/*h1, h4 {*/
-/*font-family: 'Raleway', 'Open Sans', sans-serif;*/
-/*margin: 0;*/
-/*line-height: 1;*/
-/*}*/
-/*a {*/
-/*text-decoration: none;*/
-/*line-height: 80px;*/
-/*color: black;*/
-/*}*/
-/*.centerer {*/
-/*width: 100%;*/
-/*max-width: 600px;*/
-/*margin: 0 auto;*/
-/*padding: 0 1rem;*/
-/*}*/
-/*@media (min-width: 600px) {*/
-/*.wrap {*/
-/*width: 50%;*/
-/*float: left;*/
-/*}*/
-/*}*/
 .label-center {
     text-align: center;
 }
@@ -278,7 +251,7 @@ html i, html em, html b, html strong, html span {
     transform: translateX(0);
 }
 
-
+/********************* Login style***************************/
 .login {
     background: url("../theme/plugins/images/login_bg.png") center center/cover no-repeat !important;
     height: 100%;
@@ -366,6 +339,7 @@ html i, html em, html b, html strong, html span {
     background-color: white;
 }
 
+/************** Profile style**************/
 .cover-img{
     background-image: url("../theme/plugins/images/nightsky.jpg");
     min-height: 300px;
@@ -377,3 +351,54 @@ html i, html em, html b, html strong, html span {
 .avatar{
     padding: 2.15rem;
 }
+
+.tabs-style-linemove nav{
+    background:#f7fafc
+}
+
+.tabs-style-linemove nav li:last-child::before{
+    position:absolute;
+    bottom:0;
+    left:0;
+    width:100%;
+    height:4px;
+    background:#2573b6;
+    content:'';
+    -webkit-transition:-webkit-transform .3s;
+    transition:transform .3s
+}
+.tabs-style-linemove nav li:first-child.tab-current~li:last-child::before{
+    -webkit-transform:translate3d(-400%,0,0);
+    transform:translate3d(-400%,0,0)
+}
+.tabs-style-linemove nav li:nth-child(2).tab-current~li:last-child::before{
+    -webkit-transform:translate3d(-300%,0,0);
+    transform:translate3d(-300%,0,0)
+}
+.tabs-style-linemove nav li:nth-child(3).tab-current~li:last-child::before{
+    -webkit-transform:translate3d(-200%,0,0);
+    transform:translate3d(-200%,0,0)
+}
+.tabs-style-linemove nav li:nth-child(4).tab-current~li:last-child::before{
+    -webkit-transform:translate3d(-100%,0,0);
+    transform:translate3d(-100%,0,0)
+}
+.tabs-style-linemove nav a{
+    padding:30px 0;
+    color:#2b2b2b;
+    line-height:1;
+    -webkit-transition:color .3s,-webkit-transform .3s;
+    transition:color .3s,transform .3s
+}
+.tabs-style-linemove nav li.tab-current a{
+    background-color:#2573b6;
+    color: white;
+    font-weight: bold;
+}
+
+.nav-tabs > li.active > a, .nav-tabs .nav-link.active {
+    font-weight: bold !important;
+    color: white !important;
+    background-color:#2573b6 !important;
+}
+

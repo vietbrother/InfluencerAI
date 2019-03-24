@@ -26,17 +26,17 @@ class SocialAccountService
         } else {
             print_r('$providerUser');
             $email = $providerUser->getEmail() ?? $providerUser->getNickname();
-            if($social = 'facebook'){
+            if($social == 'facebook'){
                 $account = new SocialUsers([
                     'provider_user_id' => $providerUser->getId(),
                     'provider' => $social,
-                    'name' => $providerUser->getName(),
+                    'name' => $providerUser->getName() == null ?? $providerUser->getEmail(),
                     'email' => $providerUser->getEmail(),
                     'avatar' => $providerUser->getAvatar(),
                     'provider_id' => $providerUser->getId(),
                     'access_token' => $providerUser->token
                 ]);
-            } else if($social = 'google'){
+            } else if($social == 'google'){
                 $account = new SocialUsers([
                     'provider_user_id' => $providerUser->getId(),
                     'provider' => $social,
@@ -52,7 +52,7 @@ class SocialAccountService
                     'provider_user_id' => $providerUser->getId(),
                     'provider' => $social,
                     'name' => $providerUser->getName(),
-                    'email' => $providerUser->getEmail(),
+                    'email' => $providerUser->getEmail() ?? $providerUser->getName(),
                     'avatar' => $providerUser->getAvatar(),
                     'provider_id' => $providerUser->getId(),
                     'access_token' => $providerUser->token
@@ -65,8 +65,9 @@ class SocialAccountService
 
                 $user = User::create([
                     'email' => $email,
-                    'name' => $providerUser->getEmail(),
-                    'password' => Hash::make($providerUser->getEmail()),
+                    'name' => $providerUser->getEmail() ?? $providerUser->getName(),
+                    'avatar' => $providerUser->getAvatar(),
+                    'password' => Hash::make($providerUser->getEmail()?? $providerUser->getName()),
                 ]);
             }
 
