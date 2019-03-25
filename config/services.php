@@ -64,9 +64,15 @@ return [
         'client_secret' => env('GOOGLE_APP_SECRET'),
         'redirect' => env('GOOGLE_APP_CALLBACK_URL'),
     ],
+//    'instagram' => [
+//        'client_id' => env('INSTAGRAM_APP_ID'),
+//        'client_secret' => env('INSTAGRAM_APP_SECRET'),
+//        'redirect' => env('INSTAGRAM_APP_CALLBACK_URL'),
+//    ],
+
     'instagram' => [
-        'client_id' => env('INSTAGRAM_APP_ID'),
-        'client_secret' => env('INSTAGRAM_APP_SECRET'),
-        'redirect' => env('INSTAGRAM_APP_CALLBACK_URL'),
+        'client_id' => env('INSTAGRAM_KEY'),
+        'client_secret' => env('INSTAGRAM_SECRET'),
+        'redirect' => env('INSTAGRAM_REDIRECT_URI')
     ],
 ];

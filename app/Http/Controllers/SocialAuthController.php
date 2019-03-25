@@ -14,7 +14,12 @@ class SocialAuthController extends Controller
     //
     public function redirect($social)
     {
-        return Socialite::driver($social)->redirect();
+        if ($social == 'instagram') {
+            return Socialite::with('instagram')->scopes([
+                "public_content"])->redirect();
+        } else {
+            return Socialite::driver($social)->redirect();
+        }
     }
 
     public function callback($social)
@@ -29,6 +34,6 @@ class SocialAuthController extends Controller
         // Store a piece of data in the session...
         session('user', $user);
 
-        return redirect()->to('/home');
+        return redirect()->to('/profile');
     }
 }

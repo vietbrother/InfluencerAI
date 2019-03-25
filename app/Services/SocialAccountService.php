@@ -30,7 +30,7 @@ class SocialAccountService
                 $account = new SocialUsers([
                     'provider_user_id' => $providerUser->getId(),
                     'provider' => $social,
-                    'name' => $providerUser->getName() == null ?? $providerUser->getEmail(),
+                    'name' => $providerUser->getName() == null ?? $email,
                     'email' => $providerUser->getEmail(),
                     'avatar' => $providerUser->getAvatar(),
                     'provider_id' => $providerUser->getId(),
@@ -40,7 +40,7 @@ class SocialAccountService
                 $account = new SocialUsers([
                     'provider_user_id' => $providerUser->getId(),
                     'provider' => $social,
-                    'name' => $providerUser->name,
+                    'name' => $providerUser->name == null ?? $email,
                     'email' => $providerUser->email,
                     'avatar' => $providerUser->getAvatar(),
                     'provider_id' => $providerUser->getId(),
@@ -51,8 +51,8 @@ class SocialAccountService
                 $account = new SocialUsers([
                     'provider_user_id' => $providerUser->getId(),
                     'provider' => $social,
-                    'name' => $providerUser->getName(),
-                    'email' => $providerUser->getEmail() ?? $providerUser->getName(),
+                    'name' => $providerUser->getName() == null ?? $email,
+                    'email' => $providerUser->getEmail() ?? $email,
                     'avatar' => $providerUser->getAvatar(),
                     'provider_id' => $providerUser->getId(),
                     'access_token' => $providerUser->token

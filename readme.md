@@ -9,6 +9,8 @@
 
 3. Step: 3 Download Laravel/Socialite package
 	- composer require laravel/socialite
+	- composer require socialiteproviders/instagram 
+	- composer require guzzlehttp/guzzle
 
 get token facebook : https://developers.facebook.com/ 
 
@@ -16,6 +18,7 @@ get token facebook : https://developers.facebook.com/
 ## Reference
 https://www.codermen.com/blog/66/laravel-5-7-facebook-login-tutorial-step-by-step
 https://viblo.asia/p/laravel-social-login-63vKjpNdl2R
+https://quantizd.com/integrating-instagram-api-in-laravel-5-6/
 
 ## License
 

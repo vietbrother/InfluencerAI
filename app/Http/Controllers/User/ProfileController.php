@@ -24,7 +24,29 @@ class ProfileController extends Controller
      */
     public function index()
     {
-        return view('user.profile');
+        $user_id = Auth::user()->id;
+        $accountSocials = SocialUsers::whereUserId($user_id);
+        $accFb = null;
+        $accIns = null;
+        $accTw = null;
+        $accGg = null;
+        foreach ($accountSocials as $acc) {
+            if ($acc->provider == 'facebook') {
+                $accFb = $acc;
+            } else if($acc->provider == 'twitter'){
+                $accTw = $acc;
+            } else if($acc->provider == 'instagram'){
+                $accIns = $acc;
+            } else if($acc->provider == 'youtube'){
+                $accGg = $acc;
+            } else {
+
+            }
+        }
+        return view('user.profile')->with('accFb', $accFb)
+            ->with('accTw', $accTw)
+            ->with('accIns', $accIns)
+            ->with('accGg', $accGg);
     }
 
     public function edit()
