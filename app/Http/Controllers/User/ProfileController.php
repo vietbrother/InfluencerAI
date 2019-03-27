@@ -5,6 +5,10 @@ namespace App\Http\Controllers\User;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 
+use Illuminate\Support\Facades\Auth;
+use App\SocialUsers;
+
+
 class ProfileController extends Controller
 {
     /**
@@ -24,8 +28,9 @@ class ProfileController extends Controller
      */
     public function index()
     {
+        $temp = session("user");
         $user_id = Auth::user()->id;
-        $accountSocials = SocialUsers::whereUserId($user_id);
+        $accountSocials = SocialUsers::whereUserId($user_id)->get();
         $accFb = null;
         $accIns = null;
         $accTw = null;

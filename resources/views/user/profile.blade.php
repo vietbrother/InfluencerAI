@@ -806,22 +806,78 @@
                     <div class="white-box">
                         <h3 class="box-title m-b-0">SOCIAL ACCOUNTS</h3>
                         <div class="button-box">
-                            <a href="redirect/facebook" class="btn-animation-facebook" style="min-width: 250px;"><span
-                                        class="btn btn-facebook waves-effect btn-circle waves-light"><i
-                                            class="fa fa-facebook"></i></span>Sign in with Facebook
-                            </a>
-                            <a href="redirect/twitter" class="btn-animation-twitter" style="min-width: 250px;"><span
-                                        class="btn btn-twitter waves-effect btn-circle waves-light"><i
-                                            class="fa fa-twitter"></i></span>Sign in with Twitter
-                            </a>
-                            <a href="redirect/instagram" class="btn-animation-instagram" style="min-width: 250px;"><span
-                                        class="btn btn-warning waves-effect btn-circle waves-light"><i
-                                            class="fa fa-instagram"></i></span>Sign in with Instagram
-                            </a>
-                            <a href="redirect/google" class="btn-animation-google" style="min-width: 250px;"><span
-                                        class="btn btn-youtube waves-effect btn-circle waves-light"><i
-                                            class="fa fa-youtube"></i></span>Sign in with Youtube
-                            </a>
+                            @if(empty($accFb))
+                                <a href="redirect/facebook" class="btn-animation-facebook"
+                                   style="min-width: 250px;"><span
+                                            class="btn btn-facebook waves-effect btn-circle waves-light"><i
+                                                class="fa fa-facebook"></i></span>Link with Facebook
+                                </a>
+                            @else
+                                <div class="row m-lg-0">
+                                    <button type="button"
+                                            class="btn btn-facebook btn-circle btn-lg waves-effect waves-light">
+                                        <i class="fa fa-facebook"></i></button>
+                                    <a href="/profile/edit"><img
+                                                src="{{$accFb->avatar ?? "../../../theme/plugins/images/users/user_df_link.jpg"}}"
+                                                class="img-circle link-img" alt="img"></a>
+                                    <div class="link-img-label">{{$accFb->name ?? "Facebook account"}}</div>
+                                </div>
+                            @endif
+
+                            @if(empty($accTw))
+                                <a href="redirect/twitter" class="btn-animation-twitter" style="min-width: 250px;"><span
+                                            class="btn btn-twitter waves-effect btn-circle waves-light"><i
+                                                class="fa fa-twitter"></i></span>Link with Twitter
+                                </a>
+                            @else
+                                <div class="row m-lg-0">
+                                    <button type="button"
+                                            class="btn btn-twitter btn-circle btn-lg waves-effect waves-light">
+                                        <i class="fa fa-twitter"></i></button>
+                                    <a href="/profile/edit"><img
+                                                src="{{$accTw->avatar ?? "../../../theme/plugins/images/users/user_df_link.jpg"}}"
+                                                class="img-circle link-img" alt="img"></a>
+                                    <div class="link-img-label">{{$accTw->name ?? "Twitter account"}}</div>
+                                </div>
+                            @endif
+
+                            @if(empty($accIns))
+                                <a href="redirect/instagram" class="btn-animation-instagram"
+                                   style="min-width: 250px;"><span
+                                            class="btn btn-warning waves-effect btn-circle waves-light"><i
+                                                class="fa fa-instagram"></i></span>Link with Instagram
+                                </a>
+                            @else
+                                <div class="row m-lg-0">
+                                    <button type="button"
+                                            class="btn btn-warning btn-circle btn-lg waves-effect waves-light">
+                                        <i class="fa fa-instagram"></i></button>
+                                    <a href="/profile/edit"><img
+                                                src="{{$accIns->avatar ?? "../../../theme/plugins/images/users/user_df.jpg"}}"
+                                                class="img-circle link-img" alt="img"></a>
+                                    <div class="link-img-label">{{$accIns->name ?? "Instagram account"}}</div>
+                                </div>
+                            @endif
+
+                            @if(empty($accGg))
+                                <a href="redirect/google" class="btn-animation-google" style="min-width: 250px;"><span
+                                            class="btn btn-youtube waves-effect btn-circle waves-light"><i
+                                                class="fa fa-youtube"></i></span>Link with Youtube
+                                </a>
+                            @else
+                                <div class="row m-lg-0">
+                                    <button type="button"
+                                            class="btn btn-youtube btn-circle btn-lg waves-effect waves-light">
+                                        <i class="fa fa-youtube"></i></button>
+                                    <a href="/profile/edit"><img
+                                                src="{{$accGg->avatar ?? "../../../theme/plugins/images/users/user_df_link.jpg"}}"
+                                                class="img-circle link-img" alt="img"></a>
+                                    <div class="link-img-label">{{$accGg->name ?? "Youtube account"}}
+                                    </div>
+                                </div>
+                            @endif
+
+
                         </div>
                     </div>
                 </div>

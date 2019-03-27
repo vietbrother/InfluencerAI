@@ -348,6 +348,15 @@ html i, html em, html b, html strong, html span {
     padding: 1.25rem;
 }
 
+.link-img{
+    width: 50px !important;
+    margin-left: -12px !important;
+}
+.link-img-label{
+    padding-top: 1rem;
+    padding-left: 1rem;
+}
+
 .avatar{
     padding: 2.15rem;
 }
