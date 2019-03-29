@@ -54,7 +54,10 @@ body {
 }
 .navbar-header {
   /*background: #0c4c68;*/
-  background: #0c4c68;
+  /*background: #0c4c68;*/
+  background: linear-gradient(135deg,#736cc7 21%,#0c4c68 100%,#0c4c68 100%);
+  box-shadow: 0 1px 15px 1px rgba(57,49,74,.5);
+
 }
 .navbar-top-links > li > a {
   color: #ffffff;
@@ -151,4 +154,9 @@ body {
 .nav-pills > li.active > a:hover {
   background: #0c4c68;
   color: #ffffff;
+}
+
+
+.menu-top{
+  padding-right: 1rem;
 }

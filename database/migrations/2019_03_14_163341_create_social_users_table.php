@@ -16,12 +16,12 @@ class CreateSocialUsersTable extends Migration
         Schema::create('social_users', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->integer('user_id');
-            $table->string('provider_user_id');
-            $table->string('provider');
+            $table->string('platform_id');
+            $table->string('social_type');
             $table->string('name');
             $table->string('email');
             $table->string('avatar')->nullable();
-            $table->string('provider_id')->nullable();
+            $table->string('link')->nullable();
             $table->string('access_token')->nullable();
             $table->timestamps();
         });

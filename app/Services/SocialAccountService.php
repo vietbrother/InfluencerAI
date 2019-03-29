@@ -26,20 +26,42 @@ class SocialAccountService
         } else {
             print_r('$providerUser');
             $email = $providerUser->getEmail() ?? $providerUser->getNickname();
-            if($social == 'facebook'){
+            if ($social == 'facebook') {
+
                 $account = new SocialUsers([
-                    'provider_user_id' => $providerUser->getId(),
-                    'provider' => $social,
+                    'platform_id' => $providerUser->getId(),
+                    'social_type' => Config::get('constants.socials.' + $social),
                     'name' => $providerUser->getName() == null ?? $email,
                     'email' => $providerUser->getEmail(),
                     'avatar' => $providerUser->getAvatar(),
                     'provider_id' => $providerUser->getId(),
                     'access_token' => $providerUser->token
                 ]);
-            } else if($social == 'google'){
+            } else if ($social == 'twitter') {
+                Config::get('constants.socials.twitter');
                 $account = new SocialUsers([
-                    'provider_user_id' => $providerUser->getId(),
-                    'provider' => $social,
+                    'platform_id' => $providerUser->getId(),
+                    'social_type' => Config::get('constants.socials.' + $social),
+                    'name' => $providerUser->getName() == null ?? $email,
+                    'email' => $providerUser->getEmail() ?? $email,
+                    'avatar' => $providerUser->getAvatar(),
+                    'provider_id' => $providerUser->getId(),
+                    'access_token' => $providerUser->token
+                ]);
+            } else if ($social == 'instagram') {
+                $account = new SocialUsers([
+                    'platform_id' => $providerUser->getId(),
+                    'social_type' => Config::get('constants.socials.' + $social),
+                    'name' => $providerUser->getName() == null ?? $email,
+                    'email' => $providerUser->getEmail() ?? $email,
+                    'avatar' => $providerUser->getAvatar(),
+                    'provider_id' => $providerUser->getId(),
+                    'access_token' => $providerUser->token
+                ]);
+            } else if ($social == 'google') {
+                $account = new SocialUsers([
+                    'platform_id' => $providerUser->getId(),
+                    'social_type' => Config::get('constants.socials.' + $social),
                     'name' => $providerUser->name == null ?? $email,
                     'email' => $providerUser->email,
                     'avatar' => $providerUser->getAvatar(),
@@ -49,8 +71,8 @@ class SocialAccountService
 
             } else {
                 $account = new SocialUsers([
-                    'provider_user_id' => $providerUser->getId(),
-                    'provider' => $social,
+                    'platform_id' => $providerUser->getId(),
+                    'social_type' => $social,
                     'name' => $providerUser->getName() == null ?? $email,
                     'email' => $providerUser->getEmail() ?? $email,
                     'avatar' => $providerUser->getAvatar(),
@@ -67,7 +89,7 @@ class SocialAccountService
                     'email' => $email,
                     'name' => $providerUser->getEmail() ?? $providerUser->getName(),
                     'avatar' => $providerUser->getAvatar(),
-                    'password' => Hash::make($providerUser->getEmail()?? $providerUser->getName()),
+                    'password' => Hash::make($providerUser->getEmail() ?? $providerUser->getName()),
                 ]);
             }
 

@@ -96,7 +96,7 @@
                 <!-- /.dropdown-user -->
             </li>
             <li>
-                <a href="{{ route('logout') }}"
+                <a href="{{ route('logout') }}" style="padding-right: 3rem"
                    onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
                     <i class="fa fa-power-off"></i> Logout
                 </a>
