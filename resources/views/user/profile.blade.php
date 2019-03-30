@@ -110,13 +110,15 @@
                                             <div class="col-md-3 col-xs-12 b-r text-white">
                                                 <strong style="font-size: 30px;">
                                                     @if(!empty(Auth::user()))
-                                                        {!! Auth::user()->name !!}
+                                                        {!! Auth::user()->full_name !!}
                                                     @else
                                                         {{"none"}}
                                                     @endif
                                                 </strong>
                                                 <br>
-                                                <span class="text-white"><i class="ti-location-pin mr-2"></i>New York, USA</span>
+                                                <span class="text-white"><i class="ti-location-pin mr-2"></i>
+                                                    {{ !isset(Auth::user()->location) || trim(Auth::user()->location) == '' ? 'New York, USA' :  Auth::user()->location}}
+                                                </span>
                                             </div>
 
                                         </div>

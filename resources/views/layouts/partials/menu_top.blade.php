@@ -73,7 +73,7 @@
                          alt="user-img" width="36" class="img-circle">
                         <b class="hidden-xs">
                             @if(!empty(Auth::user()))
-                                {!! Auth::user()->name !!}
+                                {!! Auth::user()->full_name !!}
                             @else
                                 {{"none"}}
                             @endif

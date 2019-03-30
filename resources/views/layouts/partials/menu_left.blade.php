@@ -23,12 +23,18 @@
                     {{--<li><a href="javascript:void(0)"><i class="fa fa-power-off"></i> Logout</a></li>--}}
                 {{--</ul>--}}
             {{--</li>--}}
-            <li><a href="/home" class="waves-effect"><i class=" ti-home text-info"></i> <span
-                            class="hide-menu">Dashboard</span></a></li>
-            <li><a href="/profile" class="waves-effect"><i class="ti-user text-danger"></i> <span
-                            class="hide-menu">Account</span></a></li>
-            <li><a href="/faq" class="waves-effect"><i class="ti-help text-success"></i> <span
-                            class="hide-menu">Faqs</span></a></li>
+            <li><a href="/home" class="waves-effect"><i class=" ti-home text-info"></i> &nbsp <span
+                            class="hide-menu">  Dashboard</span></a></li>
+            <li><a href="/#" class="waves-effect"><i class="fa fa-briefcase text-danger"></i> &nbsp  <span
+                            class="hide-menu">  Campaigns</span></a></li>
+            <li><a href="/profile" class="waves-effect"><i class="ti-user text-danger"></i> &nbsp <span
+                            class="hide-menu">  Account</span></a></li>
+            <li><a href="/#" class="waves-effect"><i class="ti-credit-card text-info"></i>  &nbsp <span
+                            class="hide-menu">  Payment</span></a></li>
+            <li><a href="/#" class="waves-effect"><i class=" ti-email text-info"></i>  &nbsp <span
+                            class="hide-menu">  Contact</span></a></li>
+            <li><a href="/faq" class="waves-effect"><i class="ti-bookmark text-success"></i>  &nbsp <span
+                            class="hide-menu">  Faqs</span></a></li>
             {{--<li class="nav-small-cap m-t-10">--- Main Menu</li>--}}
             {{--<li><a href="index.html" class="waves-effect"><i class="linea-icon linea-basic fa-fw" data-icon="v"></i>--}}
                     {{--<span class="hide-menu"> Dashboard <span class="fa arrow"></span> <span--}}

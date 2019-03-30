@@ -11,15 +11,17 @@
 	- composer require laravel/socialite
 	- composer require socialiteproviders/instagram 
 	- composer require guzzlehttp/guzzle
+	
+	- composer require stevebauman/location
 
 get token facebook : https://developers.facebook.com/ 
 
 
 ## Reference
-https://www.codermen.com/blog/66/laravel-5-7-facebook-login-tutorial-step-by-step
-https://viblo.asia/p/laravel-social-login-63vKjpNdl2R
-https://quantizd.com/integrating-instagram-api-in-laravel-5-6/
-
+- https://www.codermen.com/blog/66/laravel-5-7-facebook-login-tutorial-step-by-step
+- https://viblo.asia/p/laravel-social-login-63vKjpNdl2R
+- https://quantizd.com/integrating-instagram-api-in-laravel-5-6/
+- http://www.expertphp.in/article/how-to-get-location-from-its-ip-address-using-laravel-5-4-with-example
 ## License
 
 The Laravel framework is open-source software licensed under the [MIT license](https://opensource.org/licenses/MIT).

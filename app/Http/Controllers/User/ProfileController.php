@@ -7,6 +7,7 @@ use Illuminate\Http\Request;
 
 use Illuminate\Support\Facades\Auth;
 use App\SocialUsers;
+use Config;
 
 
 class ProfileController extends Controller
@@ -30,19 +31,20 @@ class ProfileController extends Controller
     {
         $temp = session("user");
         $user_id = Auth::user()->id;
+        $abc = Auth::user();
         $accountSocials = SocialUsers::whereUserId($user_id)->get();
         $accFb = null;
         $accIns = null;
         $accTw = null;
         $accGg = null;
         foreach ($accountSocials as $acc) {
-            if ($acc->provider == 'facebook') {
+            if ($acc->social_type == Config::get('constants.socials.facebook')) {
                 $accFb = $acc;
-            } else if($acc->provider == 'twitter'){
+            } else if($acc->social_type == Config::get('constants.socials.twitter')){
                 $accTw = $acc;
-            } else if($acc->provider == 'instagram'){
+            } else if($acc->social_type == Config::get('constants.socials.instagram')){
                 $accIns = $acc;
-            } else if($acc->provider == 'youtube'){
+            } else if($acc->social_type == Config::get('constants.socials.youtube')){
                 $accGg = $acc;
             } else {
 
