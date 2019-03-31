@@ -22,7 +22,7 @@ class CreateSocialUsersTable extends Migration
             $table->string('email');
             $table->string('avatar')->nullable();
             $table->string('link')->nullable();
-            $table->string('access_token')->nullable();
+            $table->string('sns_access_token')->nullable();
             $table->timestamps();
         });
     }

@@ -37,7 +37,7 @@ class SocialAccountService
                     'email' => $providerUser->getEmail(),
                     'avatar' => $providerUser->getAvatar(),
                     'provider_id' => $providerUser->getId(),
-                    'access_token' => $providerUser->token
+                    'sns_access_token' => $providerUser->token
                 ]);
             } else if ($social == 'twitter') {
                 $account = new SocialUsers([
@@ -47,7 +47,7 @@ class SocialAccountService
                     'email' => $email,
                     'avatar' => $providerUser->getAvatar(),
                     'provider_id' => $providerUser->getId(),
-                    'access_token' => $providerUser->token
+                    'sns_access_token' => $providerUser->token
                 ]);
             } else if ($social == 'instagram') {
                 $account = new SocialUsers([
@@ -57,7 +57,7 @@ class SocialAccountService
                     'email' => $email,
                     'avatar' => $providerUser->getAvatar(),
                     'provider_id' => $providerUser->getId(),
-                    'access_token' => $providerUser->token
+                    'sns_access_token' => $providerUser->token
                 ]);
             } else if ($social == 'google') {
                 $account = new SocialUsers([
@@ -67,7 +67,7 @@ class SocialAccountService
                     'email' => $email,
                     'avatar' => $providerUser->getAvatar(),
                     'provider_id' => $providerUser->getId(),
-                    'access_token' => $providerUser->token
+                    'sns_access_token' => $providerUser->token
                 ]);
 
             } else {
@@ -78,7 +78,7 @@ class SocialAccountService
                     'email' => $email,
                     'avatar' => $providerUser->getAvatar(),
                     'provider_id' => $providerUser->getId(),
-                    'access_token' => $providerUser->token
+                    'sns_access_token' => $providerUser->token
                 ]);
             }
 
