@@ -22,6 +22,9 @@ get token facebook : https://developers.facebook.com/
 - https://viblo.asia/p/laravel-social-login-63vKjpNdl2R
 - https://quantizd.com/integrating-instagram-api-in-laravel-5-6/
 - http://www.expertphp.in/article/how-to-get-location-from-its-ip-address-using-laravel-5-4-with-example
+
+- https://www.howtoforge.com/tutorial/how-to-install-laravel-5x-with-nginx-and-php-fpm-7-on-centos-7/
+
 ## License
 
 The Laravel framework is open-source software licensed under the [MIT license](https://opensource.org/licenses/MIT).

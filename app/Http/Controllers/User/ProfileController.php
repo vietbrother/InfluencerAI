@@ -60,4 +60,10 @@ class ProfileController extends Controller
     {
         return view('user.profile_edit');
     }
+
+    public function updateMainInfo()
+    {
+        $currentUser = Auth::user();
+        return view('user.profile_register')->with('currentUser', $currentUser);
+    }
 }
