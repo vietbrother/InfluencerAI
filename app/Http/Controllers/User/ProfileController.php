@@ -7,6 +7,7 @@ use Illuminate\Http\Request;
 
 use Illuminate\Support\Facades\Auth;
 use App\SocialUsers;
+use App\User;
 use Config;
 
 
@@ -31,7 +32,10 @@ class ProfileController extends Controller
     {
         $temp = session("user");
         $user_id = Auth::user()->id;
-        $abc = Auth::user();
+        $user = Auth::user();
+        if(empty($user->user_type)){
+            return redirect()->to('/profile/register');
+        }
         $accountSocials = SocialUsers::whereUserId($user_id)->get();
         $accFb = null;
         $accIns = null;
@@ -65,5 +69,20 @@ class ProfileController extends Controller
     {
         $currentUser = Auth::user();
         return view('user.profile_register')->with('currentUser', $currentUser);
+    }
+
+    public function create(Request $request)
+    {
+        $data = $request->all();
+        $user_id = Auth::user()->id;
+        User::whereId($user_id)
+            ->update(array('username' => $data['username'],
+                'email' => $data['email'],
+                'full_name' => $data['fullname'],
+                'user_type' => $data['radio'] == 'influencer' ? '1' : '0',
+                'is_active' => '1',
+                'description' => $data['description']
+                ));
+        return redirect()->to('/profile');
     }
 }

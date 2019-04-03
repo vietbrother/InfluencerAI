@@ -34,7 +34,7 @@ class SocialAuthController extends Controller
         // Store a piece of data in the session...
         session('user', $user);
 
-        if(empty($user->user_type) || $user->user_type == "1"){
+        if(empty($user->user_type)){
             return redirect()->to('/profile/register');
         }
         return redirect()->to('/profile');
