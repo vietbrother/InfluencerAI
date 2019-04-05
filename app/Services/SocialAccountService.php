@@ -13,6 +13,7 @@ use Illuminate\Support\Facades\Hash;
 use App\SocialUsers;
 use App\User;
 use Config;
+use Illuminate\Support\Facades\Auth;
 
 class SocialAccountService
 {
@@ -82,10 +83,11 @@ class SocialAccountService
                 ]);
             }
 
-            $user = User::whereEmail($email)->first();
-            $ip = \Request::ip();
-            $data = \Location::get($ip);
-            if (!$user) {
+            $user_id = Auth::user() == null ? null :  Auth::user()->id;
+            //$user = User::whereEmail($email)->first();
+            if ($user_id == null || $user_id == "") {
+                $ip = \Request::ip();
+                $data = \Location::get($ip);
                 $localtion = (empty($data->cityName) ?  '' : ($data->cityName  . ','))
                     . $data->regionName;
                 $user = User::create([
@@ -98,6 +100,8 @@ class SocialAccountService
                     'country' => $data->countryCode,
                     'ip' => $ip,
                 ]);
+            } else {
+                $user = User::whereId($user_id)->first();
             }
 
             $account->user()->associate($user);

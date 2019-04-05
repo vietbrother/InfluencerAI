@@ -12,6 +12,7 @@ return [
         'twitter' => '2',
         'instagram' => '3',
         'google' => '4',
+        'youtube' => '4',
     ]
 
     //1:facebook, 2:twitter, 3:instagram, 4:youtube
