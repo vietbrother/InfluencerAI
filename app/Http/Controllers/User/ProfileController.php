@@ -81,6 +81,10 @@ class ProfileController extends Controller
                 'full_name' => $data['fullname'],
                 'user_type' => $data['radio'] == 'influencer' ? '1' : '0',
                 'is_active' => '1',
+                'gender' => $data['gender'],
+                'location' => $data['location'],
+                'country' => $data['country'],
+                'date_of_birth' => $data['birthday'],
                 'description' => $data['description']
                 ));
         return redirect()->to('/profile');

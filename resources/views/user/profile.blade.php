@@ -117,7 +117,7 @@
                                                 </strong>
                                                 <br>
                                                 <span class="text-white"><i class="ti-location-pin mr-2"></i>
-                                                    {{ !isset(Auth::user()->location) || trim(Auth::user()->location) == '' ? 'New York, USA' :  Auth::user()->location}}
+                                                    {{ !isset(Auth::user()->location) || trim(Auth::user()->location) == '' ? 'New York, USA' :  Auth::user()->location . ', ' . Auth::user()->country}}
                                                 </span>
                                             </div>
 
@@ -767,20 +767,17 @@
                                         <h4>you can use it with the small code</h4>
                                     </div>
                                     <div class="col-md-5 pull-right">
-                                        <p>Vulputate eget, arcu, fringilla vel, aliquet nec, daf adfd vulputate eget,
-                                            arcu.
-                                            In enim justo, rhoncus ut, imperdiet a.</p>
+                                        <p>Comming soon...</p>
                                     </div>
                                     <div class="clearfix"></div>
                                 </div>
                                 <div role="tabpanel" class="tab-pane" id="imessages">
                                     <div class="col-md-6">
                                         <h3>Come on you have a lot message</h3>
-                                        <h4>you can use it with the small code</h4>
+                                        <h4>Comming soon...</h4>
                                     </div>
                                     <div class="col-md-5 pull-right">
-                                        <p>Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim
-                                            justo, rhoncus ut, imperdiet a.</p>
+                                        <p>Comming soon...</p>
                                     </div>
                                     <div class="clearfix"></div>
                                 </div>
@@ -790,8 +787,7 @@
                                         <h4>you can use it with the small code</h4>
                                     </div>
                                     <div class="col-md-5 pull-right">
-                                        <p>Vulputate eget, fringilla vel, aliquet nec, daf adfd vulputate eget, arcu. In
-                                            enim justo, rhoncus ut, imperdiet a.</p>
+                                        <p>Comming soon...</p>
                                     </div>
                                     <div class="clearfix"></div>
                                 </div>

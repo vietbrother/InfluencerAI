@@ -47,7 +47,7 @@
             <div class="form-group text-center">
                 <img src="/theme/plugins/images/logo_login.png" class="thumb-lg img-fluid logo-login"
                      alt="img">
-                <h3 class="text-center">Create Profile</h3>
+                <h3 class="text-center">Update Your Profile</h3>
             </div>
             <!-- multistep form -->
             <div class="white-box">
@@ -85,23 +85,57 @@
 
                     <div class="form-group">
                         <label for="fullname" class="control-label">Full Name</label>
-                        <input type="text" class="form-control" id="fullname" name="fullname" placeholder="Clark Kent"
+                        <input type="text" class="form-control" id="fullname" name="fullname" placeholder="Enter your fullname"
                                value="{{$currentUser->full_name}}"
                                required>
                     </div>
                     <div class="form-group">
                         <label for="username" class="control-label">User Name</label>
-                        <input type="text" class="form-control" id="username" name="username" placeholder="superman"
+                        <input type="text" class="form-control" id="username" name="username" placeholder="Enter your username"
                                value="{{$currentUser->username}}"
                                required>
                     </div>
                     <div class="form-group">
                         <label for="inputEmail" class="control-label">Email</label>
-                        <input type="email" class="form-control" id="email" name="email" placeholder="Email"
+                        <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email"
                                value="{{$currentUser->email}}"
                                data-error="Bruh, that email address is invalid" required>
                         <div class="help-block with-errors"></div>
                     </div>
+                    <div class="form-group">
+                        <label class="control-label">Date of Birth</label>
+                        <input class="form-control" type="date" id="birthday" name="birthday" placeholder="dd/mm/yyyy">
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label">Gender</label>
+                        <br />
+                        <div class="radio radio-inline radio-info">
+                            <input type="radio" name="gender" id="male" value="Male" checked>
+                            <label for="influencer"> Male </label>
+                        </div>
+                        <div class="radio radio-inline radio-info">
+                            <input type="radio" name="gender" id="female" value="Female">
+                            <label for="maketer"> Female </label>
+                        </div>
+                        <div class="radio radio-inline radio-info">
+                            <input type="radio" name="gender" id="other" value="Other">
+                            <label for="maketer"> Other </label>
+                        </div>
+                        <br />
+                    </div>
+                    <div class="form-group">
+                        <label for="location" class="control-label">Location</label>
+                        <input type="text" class="form-control" id="location" name="location" placeholder="Enter your location"
+                               value="{{$currentUser->location}}"
+                               required>
+                    </div>
+                    <div class="form-group">
+                        <label for="country" class="control-label">Country</label>
+                        <input type="text" class="form-control" id="country" name="country" placeholder="Enter your country"
+                               value="{{$currentUser->country}}"
+                               required>
+                    </div>
+
                     <div class="form-group">
                         <label for="description" class="control-label">Biography</label>
                         <textarea id="description" name="description" class="form-control"></textarea>

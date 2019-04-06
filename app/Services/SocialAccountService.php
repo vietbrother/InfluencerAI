@@ -97,7 +97,7 @@ class SocialAccountService
                     'avatar' => $providerUser->getAvatar(),
                     'password' => Hash::make($providerUser->getEmail() ?? $email),
                     'location' => $localtion,
-                    'country' => $data->countryCode,
+                    'country' => $data->countryName,
                     'ip' => $ip,
                 ]);
             } else {
