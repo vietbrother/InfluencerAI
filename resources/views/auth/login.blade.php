@@ -242,7 +242,7 @@
                                         class="fa fa-twitter"></i></span>Sign in with Twitter
                         </a>
                         <a href="redirect/instagram" class="btn-animation-instagram"><span
-                                    class="btn btn-warning waves-effect btn-circle waves-light"><i
+                                    class="btn btn-instagram-cus waves-effect btn-circle waves-light"><i
                                         class="fa fa-instagram"></i></span>Sign in with Instagram
                         </a>
                         <a href="redirect/google" class="btn-animation-google"><span

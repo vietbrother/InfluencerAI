@@ -34,7 +34,7 @@ class SocialAccountService
                 $account = new SocialUsers([
                     'platform_id' => $providerUser->getId(),
                     'social_type' => $socialType,
-                    'name' => $name,
+                    'username' => $name,
                     'email' => $providerUser->getEmail(),
                     'avatar' => $providerUser->getAvatar(),
                     'provider_id' => $providerUser->getId(),
@@ -44,7 +44,7 @@ class SocialAccountService
                 $account = new SocialUsers([
                     'platform_id' => $providerUser->getId(),
                     'social_type' => $socialType,
-                    'name' => $name,
+                    'username' => $name,
                     'email' => $email,
                     'avatar' => $providerUser->getAvatar(),
                     'provider_id' => $providerUser->getId(),
@@ -54,7 +54,7 @@ class SocialAccountService
                 $account = new SocialUsers([
                     'platform_id' => $providerUser->getId(),
                     'social_type' => $socialType,
-                    'name' => $name,
+                    'username' => $name,
                     'email' => $email,
                     'avatar' => $providerUser->getAvatar(),
                     'provider_id' => $providerUser->getId(),
@@ -64,7 +64,7 @@ class SocialAccountService
                 $account = new SocialUsers([
                     'platform_id' => $providerUser->getId(),
                     'social_type' => $socialType,
-                    'name' => $name,
+                    'username' => $name,
                     'email' => $email,
                     'avatar' => $providerUser->getAvatar(),
                     'provider_id' => $providerUser->getId(),
@@ -75,7 +75,7 @@ class SocialAccountService
                 $account = new SocialUsers([
                     'platform_id' => $providerUser->getId(),
                     'social_type' => $socialType,
-                    'name' => $name,
+                    'username' => $name,
                     'email' => $email,
                     'avatar' => $providerUser->getAvatar(),
                     'provider_id' => $providerUser->getId(),

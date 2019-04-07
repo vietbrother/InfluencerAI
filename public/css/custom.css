@@ -199,9 +199,13 @@ html i, html em, html b, html strong, html span {
     transform: translateX(0);
 }
 
-
+.btn-instagram-cus {
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+    border: 1px solid #fec107;
+    color: white;
+}
 .btn-animation-instagram {
-    color: #FCAF45;
+    color: #D6249F;
     background-color: white;
 }
 
@@ -212,13 +216,14 @@ html i, html em, html b, html strong, html span {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: #FCAF45;
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 0%, #fd5949 26%,#d6249f 60%,#285AEB 130%);
     transform: translateX(-100%);
 }
 
 .btn-animation-instagram:hover {
     color: white;
-    background: #FCAF45;
+    /*background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 0%, #fd5949 26%,#d6249f 60%,#285AEB 130%);*/
+    background: #c12797;
 }
 
 .btn-animation-instagram:hover:before {

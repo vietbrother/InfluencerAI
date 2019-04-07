@@ -107,7 +107,7 @@
                                         <br>
                                         <div class="user-btm-box">
 
-                                            <div class="col-md-3 col-xs-12 b-r text-white">
+                                            <div class="col-md-10 col-xs-12 b-r text-white">
                                                 <strong style="font-size: 30px;">
                                                     @if(!empty(Auth::user()))
                                                         {!! Auth::user()->full_name !!}
@@ -818,7 +818,7 @@
                                     <a href="/profile/edit"><img
                                                 src="{{$accFb->avatar ?? "../../../theme/plugins/images/users/user_df_link.jpg"}}"
                                                 class="img-circle link-img" alt="img"></a>
-                                    <div class="link-img-label">{{$accFb->name ?? "Facebook account"}}</div>
+                                    <div class="link-img-label">{{$accFb->username ?? "Facebook account"}}</div>
                                 </div>
                             @endif
 
@@ -835,7 +835,7 @@
                                     <a href="/profile/edit"><img
                                                 src="{{$accTw->avatar ?? "../../../theme/plugins/images/users/user_df_link.jpg"}}"
                                                 class="img-circle link-img" alt="img"></a>
-                                    <div class="link-img-label">{{$accTw->name ?? "Twitter account"}}</div>
+                                    <div class="link-img-label">{{$accTw->username ?? "Twitter account"}}</div>
                                 </div>
                             @endif
 
@@ -853,7 +853,7 @@
                                     <a href="/profile/edit"><img
                                                 src="{{$accIns->avatar ?? "../../../theme/plugins/images/users/user_df.jpg"}}"
                                                 class="img-circle link-img" alt="img"></a>
-                                    <div class="link-img-label">{{$accIns->name ?? "Instagram account"}}</div>
+                                    <div class="link-img-label">{{$accIns->username ?? "Instagram account"}}</div>
                                 </div>
                             @endif
 
@@ -870,7 +870,7 @@
                                     <a href="/profile/edit"><img
                                                 src="{{$accGg->avatar ?? "../../../theme/plugins/images/users/user_df_link.jpg"}}"
                                                 class="img-circle link-img" alt="img"></a>
-                                    <div class="link-img-label">{{$accGg->name ?? "Youtube account"}}
+                                    <div class="link-img-label">{{$accGg->username ?? "Youtube account"}}
                                     </div>
                                 </div>
                             @endif
