@@ -84,19 +84,19 @@
                     </div>
 
                     <div class="form-group">
-                        <label for="fullname" class="control-label">Full Name</label>
+                        <label for="fullname" class="control-label">Full Name<span class="text-danger">*</span></label>
                         <input type="text" class="form-control" id="fullname" name="fullname" placeholder="Enter your fullname"
                                value="{{$currentUser->full_name}}"
                                required>
                     </div>
                     <div class="form-group">
-                        <label for="username" class="control-label">User Name</label>
+                        <label for="username" class="control-label">User Name<span class="text-danger">*</span></label>
                         <input type="text" class="form-control" id="username" name="username" placeholder="Enter your username"
                                value="{{$currentUser->username}}"
                                required>
                     </div>
                     <div class="form-group">
-                        <label for="inputEmail" class="control-label">Email</label>
+                        <label for="inputEmail" class="control-label">Email<span class="text-danger">*</span></label>
                         <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email"
                                value="{{$currentUser->email}}"
                                data-error="Bruh, that email address is invalid" required>
@@ -124,13 +124,13 @@
                         <br />
                     </div>
                     <div class="form-group">
-                        <label for="location" class="control-label">Location</label>
+                        <label for="location" class="control-label">Location<span class="text-danger">*</span></label>
                         <input type="text" class="form-control" id="location" name="location" placeholder="Enter your location"
                                value="{{$currentUser->location}}"
                                required>
                     </div>
                     <div class="form-group">
-                        <label for="country" class="control-label">Country</label>
+                        <label for="country" class="control-label">Country<span class="text-danger">*</span></label>
                         <input type="text" class="form-control" id="country" name="country" placeholder="Enter your country"
                                value="{{$currentUser->country}}"
                                required>
@@ -143,7 +143,7 @@
 
 
                     <div class="form-group">
-                        <label for="tags" class="control-label">Tags</label>
+                        <label for="tags" class="control-label">Tags<span class="text-danger">*</span></label>
                         <select class="select2 m-b-10 select2-multiple" multiple="multiple" data-placeholder="Choose"
                                 name="tags[]" id="tags">
                             <option value="News">News</option>

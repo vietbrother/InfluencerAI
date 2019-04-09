@@ -28,7 +28,7 @@
                     <div class="white-box">
                         <form data-toggle="validator" class="form-horizontal">
                             <div class="form-group row">
-                                <label for="inputName4" class="control-label col-sm-3">Name</label>
+                                <label for="inputName4" class="control-label col-sm-3">Name<span class="text-danger">*</span></label>
                                 <div class="col-sm-9">
                                     <input type="text" class="form-control" id="inputName4" placeholder="Cina Saffary"
                                            required>
@@ -36,7 +36,7 @@
                                 </div>
                             </div>
                             <div class="form-group row">
-                                <label for="inputEmail4" class="control-label col-sm-3">Email</label>
+                                <label for="inputEmail4" class="control-label col-sm-3">Email<span class="text-danger">*</span></label>
                                 <div class="col-sm-9">
                                     <input type="email" class="form-control" id="inputEmail4" placeholder="Email"
                                            data-error="Bruh, that email address is invalid" required>
@@ -44,7 +44,7 @@
                                 </div>
                             </div>
                             <div class="form-group row">
-                                <label for="inputPassword4" class="control-label col-sm-3">Password</label>
+                                <label for="inputPassword4" class="control-label col-sm-3">Password<span class="text-danger">*</span></label>
                                 <div class="col-sm-4">
                                     <input type="password" data-toggle="validator" data-minlength="6"
                                            class="form-control"
