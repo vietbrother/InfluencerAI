@@ -1417,217 +1417,222 @@ campaigns_id</ColNames>
       <DataType>varchar(255)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <index id="329" parent="234" name="social_users_users_id_fk">
+    <column id="329" parent="234" name="secret_token">
+      <Position>15</Position>
+      <DataType>varchar(255)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <index id="330" parent="234" name="social_users_users_id_fk">
       <ColNames>user_id</ColNames>
       <Type>btree</Type>
     </index>
-    <key id="330" parent="234" name="PRIMARY">
+    <key id="331" parent="234" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="331" parent="234" name="social_users_users_id_fk">
+    <foreign-key id="332" parent="234" name="social_users_users_id_fk">
       <ColNames>user_id</ColNames>
       <RefSchemaName>influencer_ai</RefSchemaName>
       <RefTableName>users</RefTableName>
       <RefColNames>id</RefColNames>
     </foreign-key>
-    <column id="332" parent="235" name="tags_id">
+    <column id="333" parent="235" name="tags_id">
       <Position>1</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="333" parent="235" name="user_id">
+    <column id="334" parent="235" name="user_id">
       <Position>2</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <index id="334" parent="235" name="fk_tags_has_account_tags1_idx">
+    <index id="335" parent="235" name="fk_tags_has_account_tags1_idx">
       <ColNames>tags_id</ColNames>
       <Type>btree</Type>
     </index>
-    <index id="335" parent="235" name="fk_account_tags_social_account1_idx">
+    <index id="336" parent="235" name="fk_account_tags_social_account1_idx">
       <ColNames>user_id</ColNames>
       <Type>btree</Type>
     </index>
-    <key id="336" parent="235" name="PRIMARY">
+    <key id="337" parent="235" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>tags_id
 user_id</ColNames>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="337" parent="235" name="fk_tags_has_account_tags1">
+    <foreign-key id="338" parent="235" name="fk_tags_has_account_tags1">
       <ColNames>tags_id</ColNames>
       <RefSchemaName>influencer_ai</RefSchemaName>
       <RefTableName>categories</RefTableName>
       <RefColNames>id</RefColNames>
     </foreign-key>
-    <foreign-key id="338" parent="235" name="fk_account_tags_user1">
+    <foreign-key id="339" parent="235" name="fk_account_tags_user1">
       <ColNames>user_id</ColNames>
       <RefSchemaName>influencer_ai</RefSchemaName>
       <RefTableName>users</RefTableName>
       <RefColNames>id</RefColNames>
     </foreign-key>
-    <column id="339" parent="236" name="id">
+    <column id="340" parent="236" name="id">
       <Position>1</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="340" parent="236" name="username">
+    <column id="341" parent="236" name="username">
       <Position>2</Position>
       <DataType>varchar(45)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="341" parent="236" name="password">
+    <column id="342" parent="236" name="password">
       <Position>3</Position>
       <DataType>varchar(255)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="342" parent="236" name="full_name">
+    <column id="343" parent="236" name="full_name">
       <Position>4</Position>
       <DataType>varchar(45)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="343" parent="236" name="date_of_birth">
+    <column id="344" parent="236" name="date_of_birth">
       <Position>5</Position>
       <DataType>datetime|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="344" parent="236" name="gender">
+    <column id="345" parent="236" name="gender">
       <Position>6</Position>
       <DataType>varchar(45)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="345" parent="236" name="country">
+    <column id="346" parent="236" name="country">
       <Position>7</Position>
       <DataType>varchar(45)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="346" parent="236" name="location">
+    <column id="347" parent="236" name="location">
       <Position>8</Position>
       <DataType>text|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="347" parent="236" name="email">
+    <column id="348" parent="236" name="email">
       <Position>9</Position>
       <DataType>varchar(255)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="348" parent="236" name="avatar">
+    <column id="349" parent="236" name="avatar">
       <Position>10</Position>
       <DataType>varchar(4000)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="349" parent="236" name="description">
+    <column id="350" parent="236" name="description">
       <Position>11</Position>
       <DataType>longtext|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="350" parent="236" name="created_at">
+    <column id="351" parent="236" name="created_at">
       <Position>12</Position>
       <DataType>datetime|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="351" parent="236" name="updated_at">
+    <column id="352" parent="236" name="updated_at">
       <Position>13</Position>
       <DataType>datetime|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="352" parent="236" name="deleted_at">
+    <column id="353" parent="236" name="deleted_at">
       <Position>14</Position>
       <DataType>datetime|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="353" parent="236" name="last_login">
+    <column id="354" parent="236" name="last_login">
       <Position>15</Position>
       <DataType>datetime|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="354" parent="236" name="ip">
+    <column id="355" parent="236" name="ip">
       <Position>16</Position>
       <DataType>varchar(45)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="355" parent="236" name="is_active">
+    <column id="356" parent="236" name="is_active">
       <Position>17</Position>
       <DataType>tinyint(4)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="356" parent="236" name="user_type">
+    <column id="357" parent="236" name="user_type">
       <Position>18</Position>
       <Comment>Type of user: marketer or influencer</Comment>
       <DataType>tinyint(4)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="357" parent="236" name="category">
+    <column id="358" parent="236" name="category">
       <Position>19</Position>
       <DataType>text|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <key id="358" parent="236" name="PRIMARY">
+    <key id="359" parent="236" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="359" parent="237" name="id">
+    <column id="360" parent="237" name="id">
       <Position>1</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="360" parent="237" name="joined_at">
+    <column id="361" parent="237" name="joined_at">
       <Position>2</Position>
       <DataType>varchar(45)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="361" parent="237" name="msg_count">
+    <column id="362" parent="237" name="msg_count">
       <Position>3</Position>
       <DataType>int(11)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="362" parent="237" name="unread_message">
+    <column id="363" parent="237" name="unread_message">
       <Position>4</Position>
       <DataType>int(11)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="363" parent="237" name="account_id">
+    <column id="364" parent="237" name="account_id">
       <Position>5</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="364" parent="237" name="conversations_id">
+    <column id="365" parent="237" name="conversations_id">
       <Position>6</Position>
       <DataType>varchar(100)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <index id="365" parent="237" name="fk_members_account1_idx">
+    <index id="366" parent="237" name="fk_members_account1_idx">
       <ColNames>account_id</ColNames>
       <Type>btree</Type>
     </index>
-    <index id="366" parent="237" name="fk_members_conversations1_idx">
+    <index id="367" parent="237" name="fk_members_conversations1_idx">
       <ColNames>conversations_id</ColNames>
       <Type>btree</Type>
     </index>
-    <key id="367" parent="237" name="PRIMARY">
+    <key id="368" parent="237" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="368" parent="237" name="fk_members_account1">
+    <foreign-key id="369" parent="237" name="fk_members_account1">
       <ColNames>account_id</ColNames>
       <RefSchemaName>influencer_ai</RefSchemaName>
       <RefTableName>users</RefTableName>
       <RefColNames>id</RefColNames>
     </foreign-key>
-    <foreign-key id="369" parent="237" name="fk_members_conversations1">
+    <foreign-key id="370" parent="237" name="fk_members_conversations1">
       <ColNames>conversations_id</ColNames>
       <RefSchemaName>influencer_ai</RefSchemaName>
       <RefTableName>conversations</RefTableName>

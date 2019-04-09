@@ -48,7 +48,8 @@ class SocialAccountService
                     'email' => $email,
                     'avatar' => $providerUser->getAvatar(),
                     'provider_id' => $providerUser->getId(),
-                    'sns_access_token' => $providerUser->token
+                    'sns_access_token' => $providerUser->token,
+                    'secret_token' => $providerUser->tokenSecret
                 ]);
             } else if ($social == 'instagram') {
                 $account = new SocialUsers([
