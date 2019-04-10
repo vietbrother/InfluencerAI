@@ -55,7 +55,8 @@ body {
 .navbar-header {
   /*background: #0c4c68;*/
   /*background: #0c4c68;*/
-  background: linear-gradient(135deg,#736cc7 21%,#0c4c68 100%,#0c4c68 100%);
+  /*background: linear-gradient(135deg,#736cc7 21%,#0c4c68 100%,#0c4c68 100%);*/
+  background: linear-gradient(45deg, #1c83b1, #d70cdad4);
   box-shadow: 0 1px 15px 1px rgba(57,49,74,.5);
 
 }
