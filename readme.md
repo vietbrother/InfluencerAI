@@ -34,3 +34,12 @@ The Laravel framework is open-source software licensed under the [MIT license](h
 - php artisan serve
 - cd <path-to-ngrok>
 - ./ngrok http localhost:8000
+
+### Debug
+- php artisan serve
+- run degbug with xdebuger
+
+### Migrate database
+- php artisan migrate:refresh (empty database and re-create)
+
+
